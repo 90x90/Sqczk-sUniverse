@@ -3,58 +3,63 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 ------------------------------1 pages----------------------------------------------
 
 local X = Material.Load({
-	Title = "Sqczk's Universe|HUB",
-	Style = 3,
-	SizeX = 500,
-	SizeY = 350,
-	Theme = "Light",
-	ColorOverrides = {
-		MainFrame = Color3.fromRGB(235,235,235)
-	}
+   Title = "Sqczk's Universe|HUB",
+   Style = 3,
+   SizeX = 500,
+   SizeY = 350,
+   Theme = "Light",
+   ColorOverrides = {
+      MainFrame = Color3.fromRGB(235,235,235)
+   }
 })
 
 local Y = X.New({
-	Title = "Хабы"
+   Title = "Хабы"
+})
+
+local H = Z.New({
+   Title = "Хабы"
 })
 
 local A = Y.Button({
-	Text = "Lazy Hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/Scripts/main/lazyhub.lua"))()
-	end,
-	Menu = {
-		Information = function(self)
-			X.Banner({
-				Text = "Отличный хаб для Demonfall))"
-			})
-		end
-	}
+   Text = "Lazy Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/Scripts/main/lazyhub.lua"))()
+   end,
+   Menu = {
+      Information = function(self)
+         X.Banner({
+            Text = "Отличный хаб для Demonfall))"
+         })
+      end
+   }
 })
 
 local A = Y.Button({
-	Text = "LeadMarker",
-	Callback = function()
+   Text = "LeadMarker",
+   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
-	end,
-	Menu = {
-		Information = function(self)
-			X.Banner({
-			})
-		end
-	}
+   end,
+   Menu = {
+      Information = function(self)
+         X.Banner({
+         })
+      end
+   }
 })
 
-				Text = "Другой чит для Demonfall"
+            Text = "Другой чит для Demonfall"
 local A = Y.Button({
-	Text = "LeadMarker",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
-	end,
-	Menu = {
-		Information = function(self)
-			X.Banner({
-				Text = "Фарма бабла-медленно!"
-			})
-		end
-	}
+   Text = "GhostFall",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/demonfall.lua', true))() 
+ 
+
+   Menu = {
+      Information = function(self)
+         X.Banner({
+            Text = "Фарма бабла-медленно!"
+         })
+      end
+   }
 })
